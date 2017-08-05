@@ -25,10 +25,10 @@ class Message
 
   def get_twitter_client
     client = Twitter::REST::Client.new do |config|
-      config.consumer_key        = "3B0Cg3sf5C50GQQ6IyDeQQ"
-      config.consumer_secret     = "4R6ZVjeE3T1B69ZsbrbBhn42KVGek0KRZm6yjDlRrY"
-      config.access_token        = "127274227-b77OaV9AITfMGZFDhsIiFBTKeTDLpsSpJt7KeB4"
-      config.access_token_secret = "pQGOLhwl4QKKCgfWq987hLs0T9pbQtl2jhMq144a4"
+      config.consumer_key        = TWITTER_CONFIG['consumer_key']
+      config.consumer_secret     = TWITTER_CONFIG['consumer_secret']
+      config.access_token        = TWITTER_CONFIG['access_token']
+      config.access_token_secret = TWITTER_CONFIG['access_token_secret']
     end
   end
 
